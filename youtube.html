@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="youtube.css">
+    <title>🎵 Muzyka</title>
+    <link rel="icon" type="image/x-icon" href="title-icon.png">
+</head>
+<body>
+        <nav>
+            <section id="nav-left-section">
+                <div id="menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+
+                <div class="icon">
+                    <a href="youtube.html">
+                        <img src="youtube-icon.jpg">
+                    </a>
+                    
+                    <p>PL</p>
+                </div>
+            </section>
+
+            <section id="nav-middle-section">
+                <div id="search">
+                    <input type="text" placeholder="Szukaj">
+                </div>
+                <button id="magnifying-glass"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+                <button id="microphone"><i class="fa fa-microphone"></i></button>
+            </section>
+            
+            <section id="nav-right-section">
+                <div id="camera">
+                    <i class="fa fa-camera"></i>
+                </div>
+                
+                <div id="notifications">
+                    <i class="fa-solid fa-bell"></i>
+                    <div>9+</div>
+                </div>
+                <div id="pfp">
+                    <img src="pfp.jpg" >
+                </div>
+            </section>
+        </nav>
+        <main>
+
+
+            <div id="main-left">
+                <video id="video">
+                    <source src="video.mp4" type="video/mp4">
+                    <source src="video.webm" type="video/webm">
+                </video>
+                <h2 id="title">Female Vocal Music Megamix 🎧 EDM, Trap, Dubstep, DnB, Electro House 🎧 Gaming Music Mix</h2>
+                <div id="under-title">
+
+
+                    <div id="under-title-left">
+                        <img id="author" src="author-pfp.jpg">
+                        <div id="name-n-subs">
+                            <p id="name">Ixo Music <i class="fa-solid fa-check"></i></p>
+                            <p id="subs">154 tys. subskrybentów</p>
+                        </div>
+                        <button id="subscribe">Subskrybuj</button>
+                    </div>
+                    
+                    <div id="under-title-right">
+                        <button id="likes"><i class="fa-regular fa-thumbs-up"></i>  21 tys.</button>
+                        <button id="dislikes"><i class="fa-regular fa-thumbs-down"></i></button>
+                        <button id="share"><i class="fa-solid fa-share"></i> Udostępnij</button>
+                        <button id="download"><i class="fa-solid fa-download"></i> Pobierz</button>
+                        <button id="kropki"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="main-right">
+                <div id="advert">
+                    <img id="advert-img" src="advert.jpg">
+                    <div id="advert-bottom">
+                        <img id="advert-logo" src="advert-logo.jpg">
+                        <div id="name-n-all">
+                            <h4>LEGO® Fortnite</h4>
+                            <p><span style="font-weight: bold">Sponsorowane</span> www.fortnite.com</p>
+                        </div>
+                        <button>Zagraj</button>
+                    </div>
+                </div>
+
+
+
+                <div id="some-bar">
+                    <div class="arrow" id="arrow-left" onclick="arrowLeft()"><i class="fa-solid fa-angle-left"></i></div>
+                    <div id="bar-wrap">
+                    <div class="button" onclick="barActive(this)">Wszystkie</div>
+                    <div class="button" onclick="barActive(this)">Źródło: Ixo Music</div>
+                    <div class="button" onclick="barActive(this)">Podobne</div>
+                    <div class="button" onclick="barActive(this)">Na żywo</div>
+                    <div class="button" onclick="barActive(this)">Ostatnio przesłane</div>
+                    <div class="button" onclick="barActive(this)">Obejrzane</div>
+                    </div>
+                    <div class="arrow" id="arrow-right" onclick="arrowRight()"><i class="fa-solid fa-angle-left fa-rotate-180"></i></div>
+                </div>
+            </div>
+        </main>
+    <script src="youtube.js"></script>
+</body>
+</html>
