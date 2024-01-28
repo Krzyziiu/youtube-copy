@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a{
+            width: 400px;
+            height: 400px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightcoral;
+            z-index: 0;
+        }
+        #b{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+    <div id="a" onclick="die()">
+        <div id="b" onclick="stopPropagation(event)"></div>
+    </div>
+
+
+    <script>
+        const die = ()=>{
+            console.log("a was clicked")
+        }
+        const stopPropagation = (e) =>{
+            e.stopPropagation();
+        }
+    </script>
+</body>
+</html>

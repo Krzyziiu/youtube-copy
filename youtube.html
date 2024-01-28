@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="youtube.css">
+    <title>🎵 Muzyka</title>
+    <link rel="icon" type="image/x-icon" href="title-icon.png">
+</head>
+<body>
+        <nav id="nav">
+            <section id="nav-left-section">
+                <div class="menu" onclick="showLeftMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+
+                <div class="icon">
+                    <a href="http://www.youtube.com">
+                        <img src="youtube-icon.jpg">
+                    </a>
+                    
+                    <p>PL</p>
+                </div>
+            </section>
+
+            <section id="nav-middle-section">
+                <div id="search">
+                    <input type="text" placeholder="Szukaj">
+                    <i class="fa-solid fa-keyboard"></i>    
+                </div>
+                <button id="magnifying-glass"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+                <button id="microphone"><i class="fa fa-microphone"></i></button>
+            </section>
+            
+            <section id="nav-right-section">
+                <div id="camera">
+                    <i class="fa fa-camera"></i>
+                </div>
+                
+                <div id="notifications">
+                    <i class="fa-solid fa-bell"></i>
+                    <div>9+</div>
+                </div>
+                <div id="pfp">
+                    <img src="pfp.jpg" >
+                </div>
+            </section>
+        </nav>
+
+        <section id="left-menu">
+            <div id="left-menu-content">
+                <div id="menu-n-logo">
+                    <div class="menu" onclick="hideLeftMenu(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                    <div class="icon">
+                        <a href="youtube.html">
+                            <img src="youtube-icon.jpg">
+                        </a>
+                        <p>PL</p>
+                    </div>
+                </div>
+                <div class="left-menu-item-group first-menu-item">
+                    <div class="left-menu-item">
+                        <i class="fa-solid fa-house"></i>
+                        <p>Główna</p>
+                    </div>
+                    <div class="left-menu-item">
+                        <i class="fa-solid fa-bolt"></i>
+                        <p>Shorts</p>
+                    </div>
+                    <div class="left-menu-item">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <p>Subskrypcje</p>
+                    </div>
+                </div>
+                <div class="left-menu-item-group">
+                    <div class="left-menu-item left-menu-item-solo">
+                        <p>Ty ></p>
+                    </div>
+                    <div class="left-menu-item">
+                        <i class="fa-regular fa-user"></i>
+                        <p>Twój kanał</p>
+                    </div>
+                    <div class="left-menu-item">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <p>Historia</p>
+                    </div>
+                    <div class="left-menu-item">
+                        <i class="fa-regular fa-square-plus"></i>
+                        <p>Twoje filmy</p>
+                    </div>
+                    <div class="left-menu-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Do obejrzenia</p>
+                    </div>
+                    <div class="left-menu-item">
+                        <i class="fa-solid fa-scissors"></i>
+                        <p>Twoje klipy</p>
+                    </div>
+
+
+                    <div class="left-menu-item show-more">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                        <p>Polubione filmy</p>
+                    </div>
+                    <div class="left-menu-item show-more">
+                        <i class="fa-solid fa-list-ul"></i>
+                        <p>Web Development</p>
+                    </div>
+                    <div class="left-menu-item show-more">
+                        <i class="fa-solid fa-list-ul"></i>
+                        <p>Something Smart</p>
+                    </div>
+                    <div class="left-menu-item show-more">
+                        <i class="fa-solid fa-list-ul"></i>
+                        <p style="font-size: 0.7rem">Why are you even reading this at this point?</p>
+                    </div>
+
+
+                    <div class="left-menu-item" onclick="showMore(this)">
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <p>Pokaż więcej</p>
+                    </div>
+
+                </div>
+                <div class="left-menu-item-group">
+                    <div class="left-menu-item left-menu-item-solo">
+                        <p>Subskrypcje</p>
+                    </div>
+                    <div class="left-menu-item">
+                        <img src="subscribed1.jpg">
+                        <p>Alan Becker</p>
+                    </div>
+                    <div class="left-menu-item">
+                        <img src="subscribed2.jpg">
+                        <p>Nosey Nosey</p>
+                    </div>
+                    <div class="left-menu-item">
+                        <img src="subscribed3.jpg">
+                        <p>2-B-Determined</p>
+                    </div>
+                    <div class="left-menu-item">
+                        <img src="subscribed4.jpg">
+                        <p>2CELLOS</p>
+                    </div>
+                    <div class="left-menu-item">
+                        <img src="subscribed5.jpg">
+                        <p>4fun</p>
+                    </div>
+                    <div class="left-menu-item">
+                        <img src="subscribed6.jpg">
+                        <p>A co my tu mamy?</p>
+                    </div>
+                    <div class="left-menu-item">
+                        <img src="subscribed7.jpg">
+                        <p>Abelard Giza</p>
+                    </div>
+                    <div class="left-menu-item">
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <p>Pokaż jeszcze 216</p>
+                    </div>
+                </div>
+                <div class="left-menu-item-group">
+                    <div class="left-menu-item left-menu-item-solo">
+                        <p>Więcej z YouTube</p>
+                    </div>
+                    <div class="left-menu-item">
+                        <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
+                        <p>YouTube Premium</p>
+                    </div>
+                    <div class="left-menu-item">
+                        <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
+                        <p>YouTube Studio</p>
+                    </div>
+                    <div class="left-menu-item">
+                        <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
+                        <p>Youtube Music</p>
+                    </div>
+                    <div class="left-menu-item">
+                        <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
+                        <p>YouTube Kids</p>
+                    </div>
+                </div>
+                <div class="left-menu-item-group">
+                    <div class="left-menu-item">
+                        <i class="fa-solid fa-gear"></i>
+                        <p>Ustawienia</p>
+                    </div>
+                    <div class="left-menu-item">
+                        <i class="fa-regular fa-flag"></i>
+                        <p>Historia raportów</p>
+                    </div>
+                    <div class="left-menu-item">
+                        <i class="fa-regular fa-circle-question"></i>
+                        <p>Pomoc</p>
+                    </div>
+                    <div class="left-menu-item">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <p>Prześlij opinię</p>
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+            </div>
+            <div id="left-menu-scroll"></div>
+            
+        </section>
+
+
+        <main id="main">
+            <div id="main-left">
+                <div id="video" onclick="switchPlayer()">
+                    <video>
+                        <source src="video.mp4" type="video/mp4">
+                        <source src="video.webm" type="video/webm">
+                    </video>
+                    <div id="this-project-will-make-me-go-insane"><i class="fa-solid fa-play"></i></div>
+                    <div id="video-bar" onclick="stopPropagation(event)">
+                        <div id="time-bar" onclick="changeTime(event)"></div>
+                        <div id="time-bar-dot"></div>
+                        <div id="pause" onclick="play()"><i class="fa-solid fa-play"></i></div>
+                        <div id="skip"><i class="fa-solid fa-forward"></i></div>
+                        <div id="volume"><i class="fa-solid fa-volume-high"></i></div>
+                        <div id="subtitles"><img src="subtitles.png"></div>
+                        <div id="gear"><i class="fa-solid fa-gear"></i></div>
+                        <div id="miniplayer"><img src="miniplayer.png"></div>
+                        <div id="cinema-mode"><img src="cinema-mode.png"></div>
+                        <div id="full-screen"><i class="fa-solid fa-expand"></i></div>
+
+                    </div>
+                </div>
+                
+                <h2 id="title">Female Vocal Music Megamix 🎧 EDM, Trap, Dubstep, DnB, Electro House 🎧 Gaming Music Mix</h2>
+                <div id="under-title">
+
+
+                    <div id="under-title-left">
+                        <img id="author" src="author-pfp.jpg">
+                        <div id="name-n-subs">
+                            <p class="name">Ixo Music <i class="fa-solid fa-check"></i></p>
+                            <p id="subs">154 tys. subskrybentów</p>
+                        </div>
+                        <button id="subscribe">Subskrybuj</button>
+                    </div>
+                    
+                    <div id="under-title-right">
+                        <button id="likes"><i class="fa-regular fa-thumbs-up"></i> 21 tys.</button>
+                        <button id="dislikes"><i class="fa-regular fa-thumbs-down"></i></button>
+                        <button id="share"><i class="fa-solid fa-share"></i> Udostępnij</button>
+                        <button id="download"><i class="fa-solid fa-download"></i> Pobierz</button>
+                        <button id="kropki"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="main-right">
+                <div id="advert">
+                    <img id="advert-img" src="advert.jpg">
+                    <div id="advert-bottom">
+                        <img id="advert-logo" src="advert-logo.jpg">
+                        <div id="name-n-all">
+                            <h4>LEGO® Fortnite</h4>
+                            <p><span style="font-weight: bold">Sponsorowane ·</span> www.fortnite.com</p>
+                        </div>
+                        <button>Zagraj</button>
+                    </div>
+                </div>
+
+
+
+                <div id="some-bar">
+                    <div id="bar-wrap-1" class="left right both">
+                        <div id="bar-wrap-2">
+                            <div class="button active" onclick="barActive(this)">Wszystkie</div>
+                            <div class="button" onclick="barActive(this)">Źródło: Ixo Music</div>
+                            <div class="button" onclick="barActive(this)">Podobne</div>
+                            <div class="button" onclick="barActive(this)">Na żywo</div>
+                            <div class="button" onclick="barActive(this)">Ostatnio przesłane</div>
+                            <div class="button" onclick="barActive(this)">Obejrzane</div>
+                        </div>
+                    </div>
+                    <div class="arrow" id="arrow-left" onclick="arrowLeft()"><i class="fa-solid fa-angle-left"></i></div>
+                    
+                    <div class="arrow" id="arrow-right" onclick="arrowRight()"><i class="fa-solid fa-angle-left fa-rotate-180"></i></div>
+                </div>
+
+
+
+
+
+
+                <div id="recommended">
+                    <div class="recommended-video">
+                        <div class="recommended-wrap">
+                            <img src="recommended-video.jpg">
+                            <div class="video-time">1:04:25</div>
+                            <div class="watch-later"><i class="fa-regular fa-clock"></i></div>
+                            <div class="add-queue"><i class="fa-solid fa-list"></i></div>
+                        </div>
+                        <div class="info">
+                            <p class="recommended-title">Female Vocal Music Megamix 🎧 EDM, Trap, Dubstep, DnB, Electro House 🎧 Gaming Music Mix</p>
+                            <div class="name-n-views">
+                                <p class="name">Ixo Music <i class="fa-solid fa-check"></i></p>
+                                <p class="views">3,7 mln wyświetleń · 3 lata temu</p>
+                            </div>
+                        </div> 
+                        <div class="dots">
+                            <i class="fa-solid fa-ellipsis fa-rotate-90"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="recommended-video">
+                        <div class="recommended-wrap">
+                            <img src="recommended-video-2.jpg">
+                            <div class="video-time">1:04:24</div>
+                            <div class="watch-later"><i class="fa-regular fa-clock"></i></div>
+                            <div class="add-queue"><i class="fa-solid fa-list"></i></div>
+                        </div>
+                        <div class="info">
+                            <p class="recommended-title">Best Female Vocal Melodic Dubstep Mix 2022 ♫ Dubstep Female Vocals Gaming Music Mix 2022</p>
+                            <div class="name-n-views">
+                                <p class="name">Ixo Music <i class="fa-solid fa-check"></i></p>
+                                <p class="views">2 mln wyświetleń · 2 lata temu</p>
+                            </div>
+                        </div> 
+                        <div class="dots">
+                            <i class="fa-solid fa-ellipsis fa-rotate-90"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="recommended-video">
+                        <div class="recommended-wrap">
+                            <img src="recommended-video-3.jpg">
+                            <div class="video-time">2:12:04</div>
+                            <div class="watch-later"><i class="fa-regular fa-clock"></i></div>
+                            <div class="add-queue"><i class="fa-solid fa-list"></i></div>
+                        </div>
+                        <div class="info">
+                            <p class="recommended-title">Music Mix 2023 🎧 Remixes of Popular Songs 🎧 EDM Bass Boosted Music Mix</p>
+                            <div class="name-n-views">
+                                <p class="name">Forever Young <i class="fa-solid fa-check"></i></p>
+                                <p class="views">3,8 mln wyświetleń · 1 rok temu</p>
+                            </div>
+                        </div> 
+                        <div class="dots">
+                            <i class="fa-solid fa-ellipsis fa-rotate-90"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="recommended-video">
+                        <div class="recommended-wrap">
+                            <img src="recommended-video-4.jpg">
+                            <div class="video-time">1:00:00</div>
+                            <div class="watch-later"><i class="fa-regular fa-clock"></i></div>
+                            <div class="add-queue"><i class="fa-solid fa-list"></i></div>
+                        </div>
+                        <div class="info">
+                            <p class="recommended-title">Skyrim but it's lofi beats</p>
+                            <div class="name-n-views">
+                                <p class="name">bits & hits<i class="fa-solid fa-check"></i></p>
+                                <p class="views">1 mln wyświetleń · 3 miesiące</p>
+                            </div>
+                        </div> 
+                        <div class="dots">
+                            <i class="fa-solid fa-ellipsis fa-rotate-90"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="recommended-video">
+                        <div class="recommended-wrap">
+                            <img src="recommended-video-5.jpg">
+                            <div class="video-time">2:36:15</div>
+                            <div class="watch-later"><i class="fa-regular fa-clock"></i></div>
+                            <div class="add-queue"><i class="fa-solid fa-list"></i></div>
+                        </div>
+                        <div class="info">
+                            <p class="recommended-title">Top 50 Phonk Songs - Best of Phonk</p>
+                            <div class="name-n-views">
+                                <p class="name">Kurumi <i class="fa-solid fa-check"></i></p>
+                                <p class="views">10 mln wyświetleń · 7 miesięcy temu</p>
+                            </div>
+                        </div> 
+                        <div class="dots">
+                            <i class="fa-solid fa-ellipsis fa-rotate-90"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    <script src="youtube.js"></script>
+</body>
+</html>
